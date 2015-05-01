@@ -8,11 +8,17 @@
             text-align: center;
             color: #CCCCCC;
             -webkit-font-smoothing: antialiased;
-            font-family: "Sorts Mill Goudy";
+            font-family: "Sorts Mill Goudy", serif;
             font-size: 15px;
+            min-width: 
+        }
+        .spacer {
+            height: 100px;
+            height: 25vh;
+            height: calc(45vh - 230px);
+            min-height: 5px;
         }
         .name {
-            margin-top: 25vh;
             font-weight: normal;
             font-size: 30px;
         }
@@ -23,19 +29,27 @@
         .shadow {
             box-shadow: 0 3px 6px black;
         }
+        .player-holder {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
     </style>
     <link 
         href="http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic&subset=latin,latin-ext" 
         rel="stylesheet" 
         type="text/css">
     <link rel="shortcut icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <div class="spacer"></div>
     <h1 class="name">fable</h1>
-    <p>
-        <iframe class="shadow" width="300" height="330" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/103535889%3Fsecret_token%3Ds-FiLBU&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false&amp;color=333333&amp;show_playcount=false"></iframe>
+    <p class="player-holder">
+        <iframe class="shadow" width="100%" height="330" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/103535889%3Fsecret_token%3Ds-FiLBU&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false&amp;color=333333&amp;show_playcount=false"></iframe>
     </p>
     <br><br>
     <a href="mailto:chris@fablemusic.co.uk">chris@fablemusic.co.uk</a>
+    <div style="height: 40px;"></div>
 </body>
 </html>
